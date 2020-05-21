@@ -3,20 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <title>欢迎使用wangEditor-Antd-富文本编辑器-by top-dante</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.css">
 <!--    <link rel="stylesheet" href="./dist/wangEditor.min.css">-->
+<!--    测试专用，实际使用中无需引入-->
     <style>
-        #editor{
-            width: 1200px;
-            margin: 120px auto;
+        body{
+            margin: 0;
+            padding: 0;
         }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .header{
+            background: #fff;
+            box-shadow: 0 2px 8px #f0f1f2;
+            position: relative;
+            z-index: 10;
+            max-width: 100%;
+        }
+        .logo{
+            font-size: 24px;
+        }
+        .content{
+            padding: 64px 0 0;
+        }
+        .mb{
+            margin-bottom: 24px;
+        }
+
     </style>
 </head>
 <body>
-<div id="editor">
-    <p>欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
+<div id="app">
+    <a-layout :style="{minHeight:'100vh'}">
+        <a-layout-header class="header">
+            <div class="logo">wangEditor-antd</div>
+        </a-layout-header>
+        <a-layout-content class="content">
+            <p style="text-align: center;font-size: 32px;">欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
+            <div class="container">
+                <a-card title="演示效果" class="mb">
+                    <div id="editor">
+                        <p>欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
+                    </div>
+                </a-card>
+                <a-card>
+                    <span slot="title"> README.md</span>
+                    <div>
+                        <h1>wangeditor-antd</h1>
+
+                        <p>基于ant-design风格重构的wangeditor富文本编辑器,主要趋于样式重构，javascript部分未修改。  </p>
+
+                        <h4>修改部分说明</h4>
+
+                        <ul>
+                            <li>重构图标</li>
+                            <li>重构下拉样式 </li>
+                            <li>重构input输入框</li>
+                        </ul>
+
+                        <h4>目录说明</h4>
+
+                        <p><code>
+                            dist       ---主文件 <br>
+                            -- fonts --- 图标文件
+                            -- wangeditor.css
+                            -- wangeditor.js
+                            index      --- 演示html <br>
+                        </code>  </p>
+
+                        <h4>直接使用</h4>
+
+                        <p>直接下载，将dist目录放入您的项目 <br>
+                            引入 <code>wangeditor.css</code>和<code>wangeditor.js</code>文件使用即可</p>
+
+                        <h4>在vuejs中使用</h4>
+                        <pre><code>&lt;template&gt;
+                                &lt;div ref=&quot;editor&quot;&gt;&lt;/div&gt;
+                            &lt;/template&gt;&lt;/p&gt;
+
+                        &lt;script&gt;
+                            import E from &#x27;wangeditor&#x27;
+                            export default {
+                                name: &#x27;editor&#x27;,
+                                props:[&#x27;get-full-text&#x27;,&#x27;content&#x27;], //回调方法
+                                mounted() {
+                                    let editor = new E(this.$refs.editor);
+                                    editor.customConfig.onchange = (html) =&gt; {
+                                        this.getFullText(html) //内容赋值
+                                    };
+                                    editor.customConfig.uploadImgServer =&#x27;你的上传地址&#x27;;
+                                    editor.customConfig.uploadFileName = &#x27;file&#x27;;
+                                    editor.customConfig.zIndex = 100;
+                                    editor.customConfig.uploadImgParams = {
+                                        from: &#x27;editor&#x27;
+                                    };
+                                    editor.customConfig.menus = [
+                                        &#x27;head&#x27;,  // 标题
+                                        &#x27;bold&#x27;,  // 粗体
+                                        &#x27;fontSize&#x27;,  // 字号
+                                        &#x27;fontName&#x27;,  // 字体
+                                        &#x27;italic&#x27;,  // 斜体
+                                        &#x27;underline&#x27;,  // 下划线
+                                        &#x27;link&#x27;,  // 插入链接
+                                        &#x27;list&#x27;,  // 列表
+                                        &#x27;justify&#x27;,  // 对齐方式
+                                        &#x27;quote&#x27;,  // 引用
+                                        &#x27;image&#x27;,  // 插入图片
+                                        &#x27;table&#x27;,  // 表格
+                                        &#x27;video&#x27;,  // 插入视频
+                                        &#x27;undo&#x27;,  // 撤销
+                                        &#x27;redo&#x27;  // 重复
+                                    ];
+                                    editor.create();
+                                    //如果默认传递content值则渲染默认内容
+                                    if(this.content){
+                                        editor.txt.html(this.content)
+                                    }
+                                }
+                            }
+                        &lt;/script&gt;</code></pre>
+                        <p>
+                            <code>npm install wangeditor-antd --save //推荐使用cnpm</code>
+                            在项目中使用如下 <br>
+                            更多详细使用文档请详细参考 wangeditor官方文档 <br>
+                            <a href="https://www.kancloud.cn/wangfupeng/wangeditor3/332599" target="_blan">wangeditor官方文档</a></p>
+
+                        <h4>贴别鸣谢</h4>
+
+                        <ul>
+                            <li><a href="http://www.wangeditor.com/" target="_blan">wangeditor</a></li>
+                            <li><a href="https://ant.design" target="_blan">antd.design</a>  </li>
+                            <li><a href="https://antdv.com" target="_blan">antd-design-vue</a> </li>
+                        </ul>
+                    </div>
+                </a-card>
+            </div>
+
+        </a-layout-content>
+    </a-layout>
+
 </div>
 
 <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.js"></script>
+<script>
+    new Vue({
+        el:'#app'
+    })
+</script>
 <script src="./dist/wangEditor.min.js"></script>
 <script type="text/javascript">
     var E = window.wangEditor

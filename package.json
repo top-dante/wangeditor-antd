@@ -4,12 +4,16 @@
   "description": "基于ant-design风格重构的wangeditor富文本编辑器",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js --ext .jsx --ext .vue src/"
   },
   "keywords": [
     "wangeditor-antd",
     "wangeditor"
   ],
   "author": "top-dante",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  }
 }
