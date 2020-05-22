@@ -717,7 +717,11 @@
         },
 
         // 是否上传七牛云，默认为 false
-        qiniu: false
+        qiniu: false,
+        width:'100%',
+        minHeight:'100px',
+        maxHeight:'400px',
+        textBgColor:'#ffffff'
 
     };
 
@@ -4449,6 +4453,9 @@
 
             var config$$1 = this.config;
             var zIndex = config$$1.zIndex;
+            var minHeight = config$$1.minHeight;
+            var maxHeight = config$$1.maxHeight;
+            var textBgColor = config$$1.textBgColor;
 
             // 定义变量
             var $toolbarElem = void 0,
@@ -4492,8 +4499,8 @@
             $toolbarElem.addClass('w-e-toolbar');
             $textContainerElem.addClass('w-e-text-container');
             $textContainerElem.css('z-index', zIndex);
-            $textElem.addClass('w-e-text');
-
+            $textElem.addClass('w-e-text').css('min-height',minHeight)
+                .css('max-height',maxHeight).css('background-color',textBgColor);
             // 添加 ID
             var toolbarElemId = getRandom('toolbar-elem');
             $toolbarElem.attr('id', toolbarElemId);

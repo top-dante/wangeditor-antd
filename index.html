@@ -24,6 +24,7 @@
         }
         .logo{
             font-size: 24px;
+            font-weight: 700;
         }
         .content{
             padding: 64px 0 0;
@@ -42,12 +43,17 @@
         </a-layout-header>
         <a-layout-content class="content">
             <p style="text-align: center;font-size: 32px;">欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
+            <div style="text-align: center;padding: 24px 0 64px">
+                <a href="" target="_blank"><a-button icon="read">文档</a-button></a>
+                <a href="" target="_blank"><a-button icon="cloud-download">下载</a-button></a>
+                <a href="https://github.com/top-dante/wangeditor-antd.git" target="_blank">
+                    <a-button icon="github">github</a-button>
+                </a>
+            </div>
             <div class="container">
-                <a-card title="演示效果" class="mb">
-                    <div id="editor">
-                        <p>欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
-                    </div>
-                </a-card>
+                <div id="editor" class="mb">
+                    <p>欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
+                </div>
                 <a-card>
                     <span slot="title"> README.md</span>
                     <div>
