@@ -27,9 +27,8 @@ npm install wangeditor-antd --save //推荐使用cnpm
 <template>
     <div ref="editor"></div>
 </template>
-
 <script>
-    import E from 'wangeditor'
+    import E from 'wangeditor-antd'
     export default {
         name: 'editor',
         props:['get-full-text','content'], //回调方法

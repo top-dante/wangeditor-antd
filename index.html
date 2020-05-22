@@ -4,149 +4,246 @@
     <meta charset="UTF-8">
     <title>欢迎使用wangEditor-Antd-富文本编辑器-by top-dante</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.css">
-<!--    <link rel="stylesheet" href="./dist/wangEditor.min.css">-->
-<!--    测试专用，实际使用中无需引入-->
+    <!--    <link rel="stylesheet" href="./dist/wangEditor.min.css">-->
+    <!--    测试专用，实际使用中无需引入-->
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
         }
-        .container{
-            width: 1200px;
+
+        .container {
+            width: 1170px;
             margin: 0 auto;
         }
-        .header{
-            background: #fff;
-            box-shadow: 0 2px 8px #f0f1f2;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .header {
             position: relative;
             z-index: 10;
             max-width: 100%;
+            padding: 64px 0;
+            text-align: center;
+            background-color: #001529;
+            margin-bottom: 24px;
+            color: #fff;
+            overflow: hidden;
         }
-        .logo{
+
+        .logo {
             font-size: 24px;
             font-weight: 700;
         }
-        .content{
-            padding: 64px 0 0;
+
+        .content {
+            padding: 24px 0;
         }
-        .mb{
+
+        .mb {
             margin-bottom: 24px;
         }
 
+        code {
+            background: #f0f2f5;
+            color: #eb2f96;
+            margin: 0 5px;
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #fafafa;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #e8e8e8;
+        }
+        .line{
+            display: flex;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom:0;
+            height: 2px;
+            background-image: linear-gradient(to right,#cf1322,#fadb14,#a0d911,#52c41a,#13c2c2,#722ed1,#1e88e5);
+        }
+        .title{
+            background: linear-gradient(to right,#cf1322,#fadb14,#a0d911,#52c41a,#13c2c2,#722ed1,#1e88e5);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-align: center;
+            font-size: 48px
+        }
     </style>
 </head>
 <body>
 <div id="app">
     <a-layout :style="{minHeight:'100vh'}">
-        <a-layout-header class="header">
-            <div class="logo">wangEditor-antd</div>
-        </a-layout-header>
-        <a-layout-content class="content">
-            <p style="text-align: center;font-size: 32px;">欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
-            <div style="text-align: center;padding: 24px 0 64px">
-                <a href="" target="_blank"><a-button icon="read">文档</a-button></a>
-                <a href="" target="_blank"><a-button icon="cloud-download">下载</a-button></a>
+        <div class="header">
+            <div class="title">欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</div>
+            <div style="text-align: center;padding-top: 24px">
+                <a href="http://www.kancloud.cn/wangfupeng/wangeditor3/332599" target="_blank">
+                    <a-button type="primary" icon="read">文档</a-button>
+                </a>
                 <a href="https://github.com/top-dante/wangeditor-antd.git" target="_blank">
-                    <a-button icon="github">github</a-button>
+                    <a-button type="primary" icon="github" style="margin:0 6px">github</a-button>
+                </a>
+
+                <a href="https://github.com/top-dante/wangeditor-antd/releases" target="_blank">
+                    <a-button type="primary" icon="cloud-download">下载</a-button>
                 </a>
             </div>
+            <svg viewBox="0 0 1440 448" style="position: absolute;right: 0;left: 0;top: 0;opacity: 0.2;width:1920px;z-index: -1">
+                <g transform="translate(395.0959811086062, 1.107980419103228)" opacity="1" frame="200">
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <g transform="rotate(0, 170, 170)">
+                            <svg>
+                                <defs>
+                                    <filter id="banner-circle-shadow-1">
+                                        <feDropShadow dx="10" dy="10" stdDeviation="10"
+                                                      flood-color="rgba(0,0,0,0.05)"></feDropShadow>
+                                    </filter>
+                                    <linearGradient id="banner-circle-fill-1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color: rgb(250, 252, 254);"></stop>
+                                        <stop offset="100%" style="stop-color: rgb(249, 252, 254);"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="170" cy="170" r="140" fill="url(#banner-circle-fill-1)"
+                                        filter="url(#banner-circle-shadow-1)"></circle>
+                            </svg>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(-213.73213547208346, 179.97933523147606)" opacity="1" frame="200">
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <g transform="rotate(0, 230, 230)">
+                            <svg>
+                                <defs>
+                                    <filter id="banner-circle-shadow-2">
+                                        <feDropShadow dx="10" dy="10" stdDeviation="10"
+                                                      flood-color="rgba(0,0,0,0.05)"></feDropShadow>
+                                    </filter>
+                                    <linearGradient id="banner-circle-fill-2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color: rgb(250, 252, 254);"></stop>
+                                        <stop offset="50%" style="stop-color: rgb(243, 249, 252);"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="230" cy="230" r="200" fill="url(#banner-circle-fill-2)"
+                                        filter="url(#banner-circle-shadow-2)"></circle>
+                            </svg>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(1296.404160340294, 192.60334080936207)" opacity="1" frame="200">
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <g transform="rotate(0, 120, 120)">
+                            <svg>
+                                <defs>
+                                    <filter id="banner-rect-shadow-1">
+                                        <feDropShadow dx="10" dy="10" stdDeviation="10"
+                                                      flood-color="rgba(0,0,0,0.05)"></feDropShadow>
+                                    </filter>
+                                    <linearGradient id="banner-rect-fill-1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="25%" style="stop-color: rgb(248, 252, 255);"></stop>
+                                        <stop offset="100%" style="stop-color: rgb(248, 251, 255);"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="30" y="30" width="180" height="180" fill="url(#banner-rect-fill-1)"
+                                      filter="url(#banner-rect-shadow-1)"></rect>
+                            </svg>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(684.3172954947438, -668.1166990098803)" opacity="1" frame="200">
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)">
+                        <g transform="rotate(0, 430, 430)">
+                            <svg width="860" height="860">
+                                <defs>
+                                    <filter id="banner-diamond-shadow-1">
+                                        <feDropShadow dx="10" dy="10" stdDeviation="10"
+                                                      flood-color="rgba(0,0,0,0.05)"></feDropShadow>
+                                    </filter>
+                                    <linearGradient id="banner-diamond-fill-1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="60%" style="stop-color: rgb(252, 253, 255);"></stop>
+                                        <stop offset="100%" style="stop-color: rgb(252, 253, 254);"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M 30 430 430 30 830 430 430 830 Z" fill="url(#banner-diamond-fill-1)"
+                                      filter="url(#banner-diamond-shadow-1)"></path>
+                            </svg>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div class="line"></div>
+        </div>
+
+        <a-layout-content class="content">
             <div class="container">
                 <div id="editor" class="mb">
                     <p>欢迎使用 <b>wangEditor-Antd</b> 富文本编辑器</p>
                 </div>
-                <a-card>
-                    <span slot="title"> README.md</span>
+                <h1>Wangeditor-antd</h1>
+                <p>基于ant-design风格重构的wangeditor富文本编辑器,主要趋于样式重构，javascript部分未修改。</p>
+                <section>
+                    <h1>修改说明</h1>
+                    <p>基础配置和官方原文的一致</p>
+                    <ul>
+                        <li>重构图标</li>
+                        <li>重构下拉样式</li>
+                        <li>重构input输入框</li>
+                        <li>新增配置<code>minHeihgt</code><code>maxheigh</code><code>textBgColor</code></li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>安装</h1>
+                    <h3>直接使用</h3>
+                    <p>下载zip，将目录中 <code>dist/wange-ditor-antd.js</code>或是<code>dist/wange-ditor-antd.js</code>引入项目直接调取
+                    </p>
                     <div>
-                        <h1>wangeditor-antd</h1>
-
-                        <p>基于ant-design风格重构的wangeditor富文本编辑器,主要趋于样式重构，javascript部分未修改。  </p>
-
-                        <h4>修改部分说明</h4>
-
-                        <ul>
-                            <li>重构图标</li>
-                            <li>重构下拉样式 </li>
-                            <li>重构input输入框</li>
-                        </ul>
-
-                        <h4>目录说明</h4>
-
-                        <p><code>
-                            dist       ---主文件 <br>
-                            -- fonts --- 图标文件
-                            -- wangeditor.css
-                            -- wangeditor.js
-                            index      --- 演示html <br>
-                        </code>  </p>
-
-                        <h4>直接使用</h4>
-
-                        <p>直接下载，将dist目录放入您的项目 <br>
-                            引入 <code>wangeditor.css</code>和<code>wangeditor.js</code>文件使用即可</p>
-
-                        <h4>在vuejs中使用</h4>
-                        <pre><code>&lt;template&gt;
-                                &lt;div ref=&quot;editor&quot;&gt;&lt;/div&gt;
-                            &lt;/template&gt;&lt;/p&gt;
-
-                        &lt;script&gt;
-                            import E from &#x27;wangeditor&#x27;
-                            export default {
-                                name: &#x27;editor&#x27;,
-                                props:[&#x27;get-full-text&#x27;,&#x27;content&#x27;], //回调方法
-                                mounted() {
-                                    let editor = new E(this.$refs.editor);
-                                    editor.customConfig.onchange = (html) =&gt; {
-                                        this.getFullText(html) //内容赋值
-                                    };
-                                    editor.customConfig.uploadImgServer =&#x27;你的上传地址&#x27;;
-                                    editor.customConfig.uploadFileName = &#x27;file&#x27;;
-                                    editor.customConfig.zIndex = 100;
-                                    editor.customConfig.uploadImgParams = {
-                                        from: &#x27;editor&#x27;
-                                    };
-                                    editor.customConfig.menus = [
-                                        &#x27;head&#x27;,  // 标题
-                                        &#x27;bold&#x27;,  // 粗体
-                                        &#x27;fontSize&#x27;,  // 字号
-                                        &#x27;fontName&#x27;,  // 字体
-                                        &#x27;italic&#x27;,  // 斜体
-                                        &#x27;underline&#x27;,  // 下划线
-                                        &#x27;link&#x27;,  // 插入链接
-                                        &#x27;list&#x27;,  // 列表
-                                        &#x27;justify&#x27;,  // 对齐方式
-                                        &#x27;quote&#x27;,  // 引用
-                                        &#x27;image&#x27;,  // 插入图片
-                                        &#x27;table&#x27;,  // 表格
-                                        &#x27;video&#x27;,  // 插入视频
-                                        &#x27;undo&#x27;,  // 撤销
-                                        &#x27;redo&#x27;  // 重复
-                                    ];
-                                    editor.create();
-                                    //如果默认传递content值则渲染默认内容
-                                    if(this.content){
-                                        editor.txt.html(this.content)
-                                    }
-                                }
-                            }
-                        &lt;/script&gt;</code></pre>
-                        <p>
-                            <code>npm install wangeditor-antd --save //推荐使用cnpm</code>
-                            在项目中使用如下 <br>
-                            更多详细使用文档请详细参考 wangeditor官方文档 <br>
-                            <a href="https://www.kancloud.cn/wangfupeng/wangeditor3/332599" target="_blan">wangeditor官方文档</a></p>
-
-                        <h4>贴别鸣谢</h4>
-
-                        <ul>
-                            <li><a href="http://www.wangeditor.com/" target="_blan">wangeditor</a></li>
-                            <li><a href="https://ant.design" target="_blan">antd.design</a>  </li>
-                            <li><a href="https://antdv.com" target="_blan">antd-design-vue</a> </li>
-                        </ul>
+                            <pre>&lt;script src=&quot;./dist/wang-editor-antd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var E = window.wangEditor
+    var editor = new E(&#x27;#editor&#x27;)
+    // 或者 var editor = new E( document.getElementById(&#x27;editor&#x27;) )
+    editor.customConfig.uploadImgServer = &#x27;/upload&#x27;
+    editor.create()
+&lt;/script&gt;</pre>
                     </div>
-                </a-card>
+                    <h3>在Vue中使用</h3>
+                    <pre>npm install wangeditor-antd --save //或是使用cnpm</pre>
+                    <p>components形式使用</p>
+                    <pre>&lt;template&gt;
+    &lt;div ref=&quot;editor&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    import E from &#x27;wangeditor-antd&#x27;
+    export default {
+        name: &#x27;editor&#x27;,
+        props:[&#x27;get-full-text&#x27;,&#x27;content&#x27;], //回调方法
+        mounted() {
+            let editor = new E(this.$refs.editor);
+            editor.customConfig.onchange = (html) =&gt; {
+                this.getFullText(html) //内容赋值
+            };
+            editor.customConfig.uploadImgServer =&#x27;你的上传地址&#x27;;
+            editor.customConfig.uploadFileName = &#x27;file&#x27;;
+            editor.customConfig.zIndex = 100;
+            editor.customConfig.uploadImgParams = {
+                from: &#x27;editor&#x27;
+            };
+            editor.create();
+            //如果默认传递content值则渲染默认内容
+            if(this.content){
+                editor.txt.html(this.content)
+            }
+        }
+    }
+&lt;/script&gt;</pre>
+                </section>
             </div>
-
         </a-layout-content>
     </a-layout>
 
@@ -157,7 +254,7 @@
 <script src="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.js"></script>
 <script>
     new Vue({
-        el:'#app'
+        el: '#app'
     })
 </script>
 <script src="./dist/wang-editor-antd.min.js"></script>
