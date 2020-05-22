@@ -1,6 +1,7 @@
 .idea
-node_modules/
+node_modules
 src
+example
 .eslintrc.js
 gulpfile.js
 package.json
