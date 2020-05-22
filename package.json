@@ -2,7 +2,7 @@
   "name": "wangeditor-antd",
   "version": "1.0.1",
   "description": "基于ant-design风格重构的wangeditor富文本编辑器",
-  "main": "index.js",
+  "main": "./dist/wang-editor-antd.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .js --ext .jsx --ext .vue src/"
