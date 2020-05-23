@@ -4,5 +4,4 @@ src
 example
 .eslintrc.js
 gulpfile.js
-package.json
 .gitignore
