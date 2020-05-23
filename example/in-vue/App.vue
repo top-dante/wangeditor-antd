@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import Editor from "./components/Editor";
+  import Editor from "./Editor";
 export default {
   name: 'App',
   components: {
