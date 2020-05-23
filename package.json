@@ -5,7 +5,8 @@
   "main": "./dist/wang-editor-antd.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .js --ext .jsx --ext .vue src/"
+    "lint": "eslint --ext .js --ext .jsx --ext .vue src/",
+    "gulp": "gulp"
   },
   "keywords": [
     "wangeditor-antd",
@@ -25,7 +26,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "path": "^0.12.7",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
     "gulp": "^4.0.2"
   }
 }
