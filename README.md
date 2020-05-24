@@ -1,5 +1,6 @@
 # wangeditor-antd
 基于ant-design风格重构的wangeditor富文本编辑器,主要趋于样式重构，javascript部分未修改。  
+  
 [![GitHub issues](https://img.shields.io/github/issues/top-dante/wangeditor-antd)](https://github.com/top-dante/wangeditor-antd)
 [![GitHub fork](https://img.shields.io/github/forks/top-dante/wangeditor-antd)](https://github.com/top-dante/wangeditor-antd)
 [![GitHub stars](https://img.shields.io/github/stars/top-dante/wangeditor-antd)](https://github.com/top-dante/wangeditor-antd)
