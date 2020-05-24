@@ -8,6 +8,8 @@
 [![npm package](https://img.shields.io/npm/v/wangeditor-antd.svg?style=flat-square)](https://www.npmjs.com/package/wangeditor-antd) 
 [![NPM downloads](http://img.shields.io/npm/dm/wangeditor-antd.svg?style=flat-square)](https://www.npmjs.com/package/wangeditor-antd)
 
+[![preview](https://oalook.oss-cn-chengdu.aliyuncs.com/20200524223122.png)]
+
 #### 修改部分说明  
 * 重构图标
 * 重构下拉样式 
