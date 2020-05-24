@@ -1,5 +1,7 @@
 # wangeditor-antd
 基于ant-design风格重构的wangeditor富文本编辑器,主要趋于样式重构，javascript部分未修改。  
+[![npm package](https://img.shields.io/npm/v/ant-design-vue.svg?style=flat-square)](https://www.npmjs.org/package/ant-design-vue) 
+[![NPM downloads](http://img.shields.io/npm/dm/ant-design-vue.svg?style=flat-square)
 
 #### 修改部分说明  
 * 重构图标
