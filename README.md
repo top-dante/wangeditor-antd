@@ -1,7 +1,8 @@
 # wangeditor-antd
 基于ant-design风格重构的wangeditor富文本编辑器,主要趋于样式重构，javascript部分未修改。  
-[![npm package](https://img.shields.io/npm/v/ant-design-vue.svg?style=flat-square)](https://www.npmjs.org/package/ant-design-vue) 
-[![NPM downloads](http://img.shields.io/npm/dm/ant-design-vue.svg?style=flat-square)
+
+[![npm package](https://img.shields.io/npm/v/wangeditor-antd.svg?style=flat-square)](https://www.npmjs.com/package/wangeditor-antd) 
+[![NPM downloads](http://img.shields.io/npm/dm/wangeditor-antd.svg?style=flat-square)](https://www.npmjs.com/package/wangeditor-antd)
 
 #### 修改部分说明  
 * 重构图标
@@ -45,23 +46,6 @@ npm install wangeditor-antd --save //推荐使用cnpm
             editor.customConfig.uploadImgParams = {
                 from: 'editor'
             };
-            editor.customConfig.menus = [
-                'head',  // 标题
-                'bold',  // 粗体
-                'fontSize',  // 字号
-                'fontName',  // 字体
-                'italic',  // 斜体
-                'underline',  // 下划线
-                'link',  // 插入链接
-                'list',  // 列表
-                'justify',  // 对齐方式
-                'quote',  // 引用
-                'image',  // 插入图片
-                'table',  // 表格
-                'video',  // 插入视频
-                'undo',  // 撤销
-                'redo'  // 重复
-            ];
             editor.create();
             //如果默认传递content值则渲染默认内容
             if(this.content){
