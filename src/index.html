@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>欢迎使用wangEditor-Antd-富文本编辑器-by top-dante</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.css">
-    <!--    <link rel="stylesheet" href="./dist/wangEditor.min.css">-->
+        <link rel="stylesheet" href="./wang-editor-antd.css">
     <!--    测试专用，实际使用中无需引入-->
     <style>
         body {
@@ -67,13 +67,6 @@
             text-align: center;
             font-size: 48px;
         }
-        .image-sync {
-            color:#1e88e5;
-            transition: all ;
-        }
-        @keyframes ant-checkbox-disabled {
-
-        }
     </style>
 </head>
 <body>
@@ -93,7 +86,7 @@
                     <a-button type="primary" icon="cloud-download">下载</a-button>
                 </a>
             </div>
-            <svg viewBox="0 0 1440 448" class="image-sync" style="position: absolute;right: 0;left: 0;top: 0;opacity: 0.2;width:1920px;z-index: -1">
+            <svg viewBox="0 0 1440 448" style="position: absolute;right: 0;left: 0;top: 0;opacity: 0.2;width:1920px;z-index: -1">
                 <g transform="translate(395.0959811086062, 1.107980419103228)" opacity="1" frame="200">
                     <g transform="matrix(1, 0, 0, 1, 0, 0)">
                         <g transform="rotate(0, 170, 170)">
@@ -255,7 +248,7 @@
         el: '#app'
     })
 </script>
-<script src="./dist/wang-editor-antd.js"></script>
+<script src="./wang-editor-antd.js"></script>
 <script type="text/javascript">
     var E = window.wangEditor
     var editor = new E('#editor')

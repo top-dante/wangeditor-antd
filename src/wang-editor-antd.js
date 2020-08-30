@@ -721,7 +721,8 @@
         width:'100%',
         minHeight:'100px',
         maxHeight:'400px',
-        textBgColor:'#ffffff'
+        textBgColor:'#ffffff',
+        toolBarSize:'' //small
 
     };
 
@@ -802,7 +803,7 @@
 // 构造函数
     function Bold(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-bold"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n  <i class="icon-bold"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1522,7 +1523,7 @@
 // 构造函数
     function Italic(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-italic"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n   <i class="icon-italic"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -4456,6 +4457,7 @@
             var minHeight = config$$1.minHeight;
             var maxHeight = config$$1.maxHeight;
             var textBgColor = config$$1.textBgColor;
+            var toolbarSize = config$$1.toolBarSize
 
             // 定义变量
             var $toolbarElem = void 0,
@@ -4497,6 +4499,7 @@
 
             // 设置通用的 class
             $toolbarElem.addClass('w-e-toolbar');
+            $toolbarElem.addClass('w-e-toolbar-'+toolbarSize);
             $textContainerElem.addClass('w-e-text-container');
             $textContainerElem.css('z-index', zIndex);
             $textElem.addClass('w-e-text').css('min-height',minHeight)

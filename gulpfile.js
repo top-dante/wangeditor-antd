@@ -34,7 +34,7 @@ gulp.task('default',()=>{
     gulp.src('./src/wang-editor-antd.js')
         .pipe(gulpReplace('__INLINE_CSS__', function () {
             // 读取 css 文件内容
-            let filePath = path.resolve(__dirname, 'dist', 'wang-editor-antd.css')
+            let filePath = path.resolve(__dirname, 'dist', 'wang-editor-antd.min.css')
             let content = fs.readFileSync(filePath).toString('utf-8')
             // 替换 \n \ ' 三个字符
             content = content.replace(/\n/g, '').replace(/\\/g, '\\\\').replace(/'/g, '\\\'')

@@ -223,18 +223,30 @@ ul.w-e-block .color-block{
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
+  align-items: center;
   background-color: #fafafa;
   border:1px solid #d9d9d9;
   border-radius: 4px 4px 0 0;
 }
+.w-e-toolbar.w-e-toolbar-small{
+  height: 40px;
+  line-height: 40px;
+}
 .w-e-toolbar .w-e-menu {
   position: relative;
   text-align: center;
-  padding: 5px 10px;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
   cursor: pointer;
   color: rgba(0,0,0,.65);
   font-size: 18px;
   border-radius: 4px;
+}
+.w-e-toolbar.w-e-toolbar-small>.w-e-menu{
+  padding: 0 6px;
+  height: 30px;
+  line-height: 30px;
 }
 .w-e-toolbar .w-e-menu:hover,
 .w-e-toolbar .w-e-menu:focus{
