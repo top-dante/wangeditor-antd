@@ -24,18 +24,31 @@ dist       ---主文件
 index      --- 演示html  
 ```  
 #### 直接使用   
-直接下载，将dist目录放入您的项目  
-引入 `wangeditor.css`和`wangeditor.js`文件使用即可
-
+直接下载，将release目录放入您的项目  
+引入 `wang-editor-antd.js`或是`wang-editor-antd.min.js`文件使用即可
+#### 新增  
+```javascript
+//工具条高度 默认 50px small为40px
+editor.customConfig.toolBarSize = 'small';
+//最小高度 默认 100px
+editor.customConfig.minHeight = '100px';
+//最大高度 默认 500px
+editor.customConfig.maxHeight = '200px';
+```
 #### 在vuejs中使用  
 ```
 npm install wangeditor-antd --save //推荐使用cnpm
+//或是
+yarn wangeditor-antd
 ```
 在项目中使用如下  
 ```vue
 <template>
-    <div ref="editor"></div>
+    <section ref="editor">
+
+    </section>
 </template>
+
 <script>
     import E from 'wangeditor-antd'
     export default {
@@ -48,7 +61,24 @@ npm install wangeditor-antd --save //推荐使用cnpm
             };
             editor.customConfig.uploadImgServer ='你的上传地址';
             editor.customConfig.uploadFileName = 'file';
+            //新增
             editor.customConfig.zIndex = 100;
+            //工具条高度 默认 50px small为40px
+            editor.customConfig.toolBarSize = 'small';
+            //最小高度 默认 100px
+            editor.customConfig.minHeight = '100px';
+            //最大高度 默认 500px
+            editor.customConfig.maxHeight = '200px';
+            editor.customConfig.menus=[
+                'head',  // 标题
+                'bold',  // 粗体
+                'fontSize',  // 字号
+                'foreColor',  // 文字颜色
+                'backColor',  // 背景颜色
+                'link',  // 插入链接
+                'list',  // 列表
+                'image',  // 插入图片
+            ];
             editor.customConfig.uploadImgParams = {
                 from: 'editor'
             };
@@ -60,9 +90,6 @@ npm install wangeditor-antd --save //推荐使用cnpm
         }
     }
 </script>
-<style>
-
-</style>
 ```
 更多详细使用文档请详细参考 wangeditor官方文档  
 <a href="https://www.kancloud.cn/wangfupeng/wangeditor3/332599" target="_blan">wangeditor官方文档</a>
