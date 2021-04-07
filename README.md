@@ -8,9 +8,9 @@
 [![npm package](https://img.shields.io/npm/v/wangeditor-antd.svg?style=flat-square)](https://www.npmjs.com/package/wangeditor-antd) 
 [![NPM downloads](http://img.shields.io/npm/dm/wangeditor-antd.svg?style=flat-square)](https://www.npmjs.com/package/wangeditor-antd)
 
-#### 更新日志
-*计划跟新适配Vue3
-*风格统一为 ant-design-vue 2.0风格
+#### 更新日志  
+* 计划跟新适配Vue3  
+* 风格统一为 ant-design-vue 2.0风格  
 
 #### 修改部分说明  
 * 重构图标
