@@ -94,15 +94,15 @@ ul.w-e-block .color-block{
   margin-bottom: 6px;
 }
 
-@font-face {font-family: "antd-icon";
+@font-face {font-family: "we-antd-icon";
   src: url('fonts/antd-icon.woff2') format('woff2');
   font-style: normal;
   font-size: inherit;
 }
-[class^="icon-"],
-[class*="icon-"] {
+[class^="w-e-icon-"],
+[class*="w-e-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'antd-icon' !important;
+  font-family: 'we-antd-icon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -113,107 +113,107 @@ ul.w-e-block .color-block{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-bulb:before {
+.w-e-icon-bulb:before {
   content: "\e7c3";
 }
 
-.icon-block:before {
+.w-e-icon-block:before {
   content: "\e7e0";
 }
 
-.icon-number:before {
+.w-e-icon-number:before {
   content: "\e802";
 }
 
-.icon-close:before {
+.w-e-icon-close:before {
   content: "\e803";
 }
 
-.icon-smile:before {
+.w-e-icon-smile:before {
   content: "\e783";
 }
 
-.icon-undo:before {
+.w-e-icon-undo:before {
   content: "\e787";
 }
 
-.icon-redo:before {
+.w-e-icon-redo:before {
   content: "\e788";
 }
 
-.icon-cloud-upload:before {
+.w-e-icon-cloud-upload:before {
   content: "\e7d9";
 }
 
-.icon-video:before {
+.w-e-icon-video:before {
   content: "\e7da";
 }
 
-.icon-image:before {
+.w-e-icon-image:before {
   content: "\e7de";
 }
 
-.icon-table:before {
+.w-e-icon-table:before {
   content: "\e7df";
 }
 
-.icon-link:before {
+.w-e-icon-link:before {
   content: "\e7e2";
 }
 
-.icon-unorderedlist:before {
+.w-e-icon-unorderedlist:before {
   content: "\e7f4";
 }
 
-.icon-orderedlist:before {
+.w-e-icon-orderedlist:before {
   content: "\e7f5";
 }
 
-.icon-align-right:before {
+.w-e-icon-align-right:before {
   content: "\e7f6";
 }
 
-.icon-align-center:before {
+.w-e-icon-align-center:before {
   content: "\e7f7";
 }
 
-.icon-align-left:before {
+.w-e-icon-align-left:before {
   content: "\e7f8";
 }
 
-.icon-bold:before {
+.w-e-icon-bold:before {
   content: "\e7f9";
 }
 
-.icon-font-colors:before {
+.w-e-icon-font-colors:before {
   content: "\e7fa";
 }
 
-.icon-font-size:before {
+.w-e-icon-font-size:before {
   content: "\e7fb";
 }
 
-.icon-line-height:before {
+.w-e-icon-line-height:before {
   content: "\e7fc";
 }
 
-.icon-strikethrough:before {
+.w-e-icon-strikethrough:before {
   content: "\e7fd";
 }
 
-.icon-underline:before {
+.w-e-icon-underline:before {
   content: "\e7fe";
 }
 
-.icon-italic:before {
+.w-e-icon-italic:before {
   content: "\e7ff";
 }
 
-.icon-code:before {
+.w-e-icon-code:before {
   content: "\e800";
 }
 
-.icon-bg-colors:before {
+.w-e-icon-bg-colors:before {
   content: "\e801";
 }
 

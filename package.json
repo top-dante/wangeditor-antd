@@ -17,6 +17,7 @@
   "devDependencies": {
     "eslint": "^7.0.0",
     "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^4.0.1",
@@ -26,7 +27,6 @@
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "path": "^0.12.7",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "gulp": "^4.0.2"
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }

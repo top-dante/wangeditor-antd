@@ -803,7 +803,7 @@
 // 构造函数
     function Bold(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n  <i class="icon-bold"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n  <i class="w-e-icon-bold"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1008,7 +1008,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-number"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-number"></i></div>');
         this.type = 'droplist';
 
         // 当前是否 active 状态
@@ -1076,7 +1076,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-font-size"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-font-size"></i></div>');
         this.type = 'droplist';
 
         // 当前是否 active 状态
@@ -1127,7 +1127,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-line-height"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-line-height"></i></div>');
         this.type = 'droplist';
 
         // 当前是否 active 状态
@@ -1206,7 +1206,7 @@
             $container.css('width', width + 'px').css('margin-left', (0 - width) / 2 + 'px');
 
             // 添加关闭按钮
-            var $closeBtn = $('<i class="icon-close w-e-panel-close"></i>');
+            var $closeBtn = $('<i class="w-e-icon-close w-e-panel-close"></i>');
             $container.append($closeBtn);
             $closeBtn.on('click', function () {
                 _this.hide();
@@ -1366,7 +1366,7 @@
 // 构造函数
     function Link(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-link"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-link"></i></div>');
         this.type = 'panel';
 
         // 当前是否 active 状态
@@ -1523,7 +1523,7 @@
 // 构造函数
     function Italic(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n   <i class="icon-italic"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n   <i class="w-e-icon-italic"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1577,7 +1577,7 @@
 // 构造函数
     function Redo(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-redo"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-redo"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1606,7 +1606,7 @@
 // 构造函数
     function StrikeThrough(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-strikethrough"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-strikethrough"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1660,7 +1660,7 @@
 // 构造函数
     function Underline(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-underline"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-underline"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1714,7 +1714,7 @@
 // 构造函数
     function Undo(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-undo"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-undo"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -1745,7 +1745,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-unorderedlist"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-unorderedlist"></i></div>');
         this.type = 'droplist';
 
         // 当前是否 active 状态
@@ -1757,9 +1757,9 @@
             $title: $('<p>设置列表</p>'),
             type: 'list', // droplist 以列表形式展示
             list: [{
-                $elem: $('<span><i class="icon-orderedlist"></i> 有序列表</span>'),
+                $elem: $('<span><i class="w-e-icon-orderedlist"></i> 有序列表</span>'),
                 value: 'insertOrderedList'
-            }, {$elem: $('<span><i class="icon-unorderedlist"></i> 无序列表</span>'), value: 'insertUnorderedList'}],
+            }, {$elem: $('<span><i class="w-e-icon-unorderedlist"></i> 无序列表</span>'), value: 'insertUnorderedList'}],
             onClick: function onClick(value) {
                 // 注意 this 是指向当前的 List 对象
                 _this._command(value);
@@ -1826,7 +1826,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-align-left"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-align-left"></i></div>');
         this.type = 'droplist';
 
         // 当前是否 active 状态
@@ -1837,9 +1837,9 @@
             width: 100,
             $title: $('<p>对齐方式</p>'),
             type: 'list', // droplist 以列表形式展示
-            list: [{$elem: $('<span><i class="icon-align-left"></i> 靠左</span>'), value: 'justifyLeft'},
-                {$elem: $('<span><i class="icon-align-center"></i> 居中</span>'), value: 'justifyCenter'},
-                {$elem: $('<span><i class="icon-align-right"></i> 靠右</span>'), value: 'justifyRight'}],
+            list: [{$elem: $('<span><i class="w-e-icon-align-left"></i> 靠左</span>'), value: 'justifyLeft'},
+                {$elem: $('<span><i class="w-e-icon-align-center"></i> 居中</span>'), value: 'justifyCenter'},
+                {$elem: $('<span><i class="w-e-icon-align-right"></i> 靠右</span>'), value: 'justifyRight'}],
             onClick: function onClick(value) {
                 // 注意 this 是指向当前的 List 对象
                 _this._command(value);
@@ -1867,7 +1867,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-font-colors"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-font-colors"></i></div>');
         this.type = 'droplist';
 
         // 获取配置的颜色
@@ -1922,7 +1922,7 @@
         var _this = this;
 
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-bg-colors"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-bg-colors"></i></div>');
         this.type = 'droplist';
 
         // 获取配置的颜色
@@ -1976,7 +1976,7 @@
 // 构造函数
     function Quote(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-block"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-block"></i>\n        </div>');
         this.type = 'click';
 
         // 当前是否 active 状态
@@ -2045,7 +2045,7 @@
 // 构造函数
     function Code(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-code"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-code"></i>\n        </div>');
         this.type = 'panel';
 
         // 当前是否 active 状态
@@ -2181,7 +2181,7 @@
 // 构造函数
     function Emoticon(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu">\n            <i class="icon-smile"></i>\n        </div>');
+        this.$elem = $('<div class="w-e-menu">\n            <i class="w-e-icon-smile"></i>\n        </div>');
         this.type = 'panel';
 
         // 当前是否 active 状态
@@ -2289,7 +2289,7 @@
 // 构造函数
     function Table(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-table"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-table"></i></div>');
         this.type = 'panel';
 
         // 当前是否 active 状态
@@ -2635,7 +2635,7 @@
 // 构造函数
     function Video(editor) {
         this.editor = editor;
-        this.$elem = $('<div class="w-e-menu"><i class="icon-video"></i></div>');
+        this.$elem = $('<div class="w-e-menu"><i class="w-e-icon-video"></i></div>');
         this.type = 'panel';
 
         // 当前是否 active 状态
@@ -2712,7 +2712,7 @@
     function Image(editor) {
         this.editor = editor;
         var imgMenuId = getRandom('w-e-img');
-        this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><i class="icon-image"></i></div>');
+        this.$elem = $('<div class="w-e-menu" id="' + imgMenuId + '"><i class="w-e-icon-image"></i></div>');
         editor.imgMenuId = imgMenuId;
         this.type = 'panel';
 
@@ -2822,7 +2822,7 @@
             // tabs 的配置
             var tabsConfig = [{
                 title: '上传图片',
-                tpl: '<div class="w-e-up-img-container">\n                    <div id="' + upTriggerId + '" class="w-e-up-btn">\n                        <i class="icon-cloud-upload"></i>\n <div class="upload-text">&#35831;&#36873;&#25321;&#22270;&#29255;&#24320;&#22987;&#19978;&#20256;</div>                   </div>\n                    <div style="display:none;">\n                        <input id="' + upFileId + '" type="file" multiple="multiple" accept="image/jpg,image/jpeg,image/png,image/gif,image/bmp"/>\n                    </div>\n                </div>',
+                tpl: '<div class="w-e-up-img-container">\n                    <div id="' + upTriggerId + '" class="w-e-up-btn">\n                        <i class="w-e-icon-cloud-upload"></i>\n <div class="upload-text">&#35831;&#36873;&#25321;&#22270;&#29255;&#24320;&#22987;&#19978;&#20256;</div>                   </div>\n                    <div style="display:none;">\n                        <input id="' + upFileId + '" type="file" multiple="multiple" accept="image/jpg,image/jpeg,image/png,image/gif,image/bmp"/>\n                    </div>\n                </div>',
                 events: [{
                     // 触发选择图片
                     selector: '#' + upTriggerId,

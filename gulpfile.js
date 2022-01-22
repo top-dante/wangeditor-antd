@@ -12,7 +12,7 @@ const gulpReplace = require('gulp-replace')
 //导出fonts
 gulp.task('default',()=>{
     gulp.src('./src/fonts/*')
-        .pipe(dest('./dist/fonts'))
+        .pipe(dest('./release/fonts'))
     //导出css和压缩css
     gulp.src('./src/wang-editor-antd.css')
         .pipe(gulpReplace( /'fonts\/antd-icon.woff2'/gm, function (fontFile) {
@@ -26,26 +26,26 @@ gulp.task('default',()=>{
             // 返回
             return 'data:application/x-font-' + ext + ';charset=utf-8;base64,' + base64
         }))
-        .pipe(dest('./dist'))
+        .pipe(dest('./release'))
         .pipe(rename('wang-editor-antd.min.css'))
         .pipe(clean())
-        .pipe(dest('./dist'));
+        .pipe(dest('./release'));
     //导出js和压缩js
     gulp.src('./src/wang-editor-antd.js')
         .pipe(gulpReplace('__INLINE_CSS__', function () {
             // 读取 css 文件内容
-            let filePath = path.resolve(__dirname, 'dist', 'wang-editor-antd.min.css')
+            let filePath = path.resolve(__dirname, 'release', 'wang-editor-antd.min.css')
             let content = fs.readFileSync(filePath).toString('utf-8')
             // 替换 \n \ ' 三个字符
             content = content.replace(/\n/g, '').replace(/\\/g, '\\\\').replace(/'/g, '\\\'')
             return content
         }))
-        .pipe(dest('./dist'))
+        .pipe(dest('./release'))
         .pipe(rename('wang-editor-antd.min.js'))
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write(''))
-        .pipe(dest('./dist'))
+        .pipe(dest('./release'))
 
     return new Promise(function(resolve, reject) {
         console.log('gulp default task is success')
